@@ -83,6 +83,40 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "RegisterAdmin",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"string\",\r\n  \"password\": \"string\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/auth/register-admin",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register-admin"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
